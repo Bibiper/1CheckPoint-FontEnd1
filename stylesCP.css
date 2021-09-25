@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body{
+    background-image: url(./img/destino-rio-de-janeiro-brazil-para-conocer-el-cerro-del-corcovado.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    font-family: Poppins;
+    grid-template-columns: 200px auto 200px;
+    grid-template-areas: 'header header header'
+                         'asideLeft main asideRight'
+                         'footer footer footer';
+}
+
+body header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top:0;
+    grid-area: header;
+    background-color: #4d4d4d36;
+    height: 100px;
+}
+
+body header img{
+    padding: 30px;
+}
+
+body header a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 50px;
+    background-color: #37435a71;
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+    transition: 0.5s;
+}
+
+body header a:hover{
+    transform: scale(1.5);
+    background-color: #0051ff94;
+}
+
+.asideLeft{
+    grid-area: asideLeft;
+    height: 300px;
+}
+
+body main{
+    grid-area: main;
+    height: calc(100vh - 200px);
+
+}
+
+body aside{
+    height: calc(100vh - 200px);
+}
+
+.asideRight{
+    grid-area: asideRight;
+}
+
+body footer{
+    grid-area: footer;
+    position: sticky;
+    bottom: 0;
+    margin-left: 0;
+    background-color:#4d4d4d65;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-template-areas: footerLeft footerRight;
+}
+
+.footerLeft{
+    grid-area: footerLeft;
+    color: white;
+    bottom: 0;
+    
+}
+
+.footerRight{
+    grid-area: footerRight;
+    color: white;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.description{
+    display: grid;
+    grid-template-columns: 110px auto;
+    grid-template-areas: 'img descricao'
+                         'img descricao'
+                         'img descricao';
+}
+
+.description img{
+    grid-area: img;
+    image-rendering: auto;
+    height: 100px;
+}
+
+.description .sobre-conteudo p{
+    grid-area: descricao;
+    font-size: 12px;
+}
