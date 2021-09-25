@@ -58,7 +58,7 @@ body header a:hover{
 body main{
     grid-area: main;
     height: calc(100vh - 200px);
-    background-color: #ffffff96;
+    background-color: #ffffff78;
     border-radius: 10px;
     padding: 20px;
     color: black;
@@ -78,7 +78,7 @@ body footer{
     position: sticky;
     bottom: 0;
     margin-left: 0;
-    background-color:#4d4d4d65;
+    background-color:#4d4d4d81;
     height: 100px;
     display: grid;
     grid-template-columns: 250px auto;
