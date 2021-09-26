@@ -52,18 +52,20 @@ body header a:hover{
 
 .asideLeft{
     grid-area: asideLeft;
-    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 body main{
     grid-area: main;
-    height: calc(100vh - 300px);
     background-color: #ffffff78;
     border-radius: 10px;
     padding: 20px;
     color: black;
     text-align: justify;
-    margin-top: 50px;
+    height: fit-content;
+    margin-top: 70px;
 }
 
 .bem-vindo{
@@ -163,3 +165,44 @@ body footer{
 .botao a span {
     font-size: xx-large;
 }
+
+/* pagina passeios.html
+ */
+.boxes-conteudo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 15px;
+    /* grid;
+    grid-template-columns: auto auto auto;
+    grid-template-areas: 'box1 box2 box3 box4' */;
+}
+
+.box-conteudo{
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    height: 200px;
+}
+
+.box-conteudo img {
+    height: 150px;
+    width: 150px;
+    border-radius: 20%;
+}
+
+.box-conteudo a {
+    color: black;
+    background-color: #eed85fad;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 12px;
+    transition: 1s;
+}
+
+.box-conteudo a:hover {
+    transform: scale(1.2);
+}
+
