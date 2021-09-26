@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulário - 2º CheckPoint - Front End I</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="styles.css" type="text/css" media="screen" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <img src="./img/LogoMakr-5f2YWn.png">
+            <a href="formulario.html">Contato</a>
+        </header>
+        <aside class="asideLeft">
+        </aside>
+        <main>
+            <form>
+                <div class="titulo">
+                    <label for="logo">Formulário de cadastro:</label>
+                </div>
+                <div class="area">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="name" maxlength="100">
+                </div>
+                <div class="area">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" >
+                </div>
+                <div class="area">
+                    <label for="mobile">Telefone</label>
+                    <input type="number" id="mobile" name="mobile" placeholder="Somente números" maxlength="11">
+                </div>
+                <div class="area">
+                    <label for="birth">Data de Nascimento</label>
+                    <input type="date" id="birth" name="birth">
+                </div>
+                <div>
+                    <input type="radio" id="maiorIdade" name="maiorIdade">
+                    <label for="maiorIdade">Maior de 18 anos</label> 
+                    <input type="radio" id="menorIdade" name="maiorIdade">
+                    <label for="menorIdade">Menor de 18 anos</label> 
+                </div>
+                <fieldset>
+                    <legend> Escolha seus interesses </legend>
+                    <div>
+                      <input type = "checkbox" id = "codificação" name = "interesse" value = "codificação">
+                      <label for = "coding"> Codificação </label>
+                    </div>
+                    <div>
+                      <input type = "checkbox" id = "música" name = "interesse" value = "música">
+                      <label for = "music"> Música </label>
+                    </div>
+                  </fieldset>
+                <div class="area">
+                    <label for="neighborhood">Bairro</label>
+                    <input required type="search" list="zone" id="neighborhood" name="neighborhood">
+                    <datalist id="zone">
+                        <optgroup label="Zona Sul">
+                            <option>Leblon</option>
+                            <option>Copacabana</option>
+                            <option>Ipanema</option>
+                            <option>Gávea</option>
+                        </optgroup>    
+                    </datalist>
+                </div>    
+                <div class="area">
+                    <label for="quantity">Quantidade</label>
+                    <input type="number" id="quantity" name="quantity">
+                </div>    
+                </div>
+                <div class="area">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                <div class="textarea">
+                    <label for="comments">Comentários/observações:</label>
+                    <div>
+                        <textarea id="comments" name="comments"></textarea>
+                    </div>    
+                </div>
+                <div class="button">
+                    <button type="submit">Cadastrar</button>
+                    <button type="reset">Limpar</button>
+                </div>
+            </form>
+        </main>
+        <aside class="asideRight">
+            <button class="botao">
+                <a href="passeios.html">
+                    <span class="material-icons">arrow_forward</span>
+                </a>
+            </button>
+        </aside>
+        <footer>
+            <div class="footerLeft">
+                <p>2º Check Point - Front End I</p>
+                <p>Digital House & copy 2021</p>
+            </div>
+            <div class="footerRight">
+                    <div class="description">
+                        <img src="img/carlos.png" alt="Carlos Alberto"/>
+                        <div class="sobre-conteudo">
+                            <p>Carlos Alberto S. S. Filho</p>
+                            <p>Aprendiz de Desenvolvedor Full Stack</p>
+                            <p>Cursando Ciência da Computação - Estácio</p>
+                        </div>
+                    </div>
+                    <div class="description">    
+                        <img src="img/janaina.png" alt="Janaina dos Santos"/>
+                        <div class="sobre-conteudo">
+                            <p>Janaina dos Santos</p>
+                            <p>Aprendiz de Desenvolvedor Full Stack</p>
+                            <p>Cursando CTD na Digital House Brasil</p>
+                        </div>
+                    </div>
+                    <div class="description">    
+                        <img src="img/bianca.png" alt="Bianca Moraes"/>
+                        <div class="sobre-conteudo">
+                            <p>Bianca Santos de Moraes</p>
+                            <p>Desenvolvedora de Integrações</p>
+                            <p>Cursando CTD na Digital House Brasil</p>
+                        </div>
+                    </div>    
+            </div>
+        </footer>
+    </body>
+</html>    
