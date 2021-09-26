@@ -10,9 +10,14 @@
     <body>
         <header>
             <img src="./img/LogoMakr-5f2YWn.png">
-            <a href="formulario.html">Contato</a>
+            <a href="index.html">Home</a>
         </header>
         <aside class="asideLeft">
+            <button class="botao">
+                <a href="passeios.html">
+                    <span class="material-icons">arrow_back</span>
+                </a>
+            </button>
         </aside>
         <main>
             <form>
@@ -29,7 +34,7 @@
                 </div>
                 <div class="area">
                     <label for="mobile">Telefone</label>
-                    <input type="number" id="mobile" name="mobile" placeholder="Somente números" maxlength="11">
+                    <input type="tel" id="mobile" name="mobile" placeholder="Somente números" maxlength="11">
                 </div>
                 <div class="area">
                     <label for="birth">Data de Nascimento</label>
@@ -41,44 +46,30 @@
                     <input type="radio" id="menorIdade" name="maiorIdade">
                     <label for="menorIdade">Menor de 18 anos</label> 
                 </div>
+                <div>
+                    <label for="passeios">Escolha seu passeio:</label>
+                    <select id="passeio" name="passeios">
+                        <option value="telegrafo">Passeio pela Pedra do Telégrafo</option>
+                        <option value="florestaTijuca">Caminhada pela Floresta da Tijuca</option>
+                        <option value="veleiro">Sail in Rio - Passeio de Veleiro</option>
+                        <option value="jipe">Excursão de jipe</option>
+                    </select>
+                </div>
                 <fieldset>
-                    <legend> Escolha seus interesses </legend>
+                    <legend> Escolha seus interesses</legend>
                     <div>
-                      <input type = "checkbox" id = "codificação" name = "interesse" value = "codificação">
-                      <label for = "coding"> Codificação </label>
+                      <input type = "checkbox" id = "tourism" name = "interesse" value = "tourism">
+                      <label for = "tourism"> Turismo </label>
                     </div>
                     <div>
-                      <input type = "checkbox" id = "música" name = "interesse" value = "música">
-                      <label for = "music"> Música </label>
+                      <input type = "checkbox" id = "living" name = "interesse" value = "living">
+                      <label for = "living"> Residência </label>
                     </div>
+                    <div>
+                        <input type = "checkbox" id = "study" name = "interesse" value = "study">
+                        <label for = "study"> Estudo </label>
+                      </div>
                   </fieldset>
-                <div class="area">
-                    <label for="neighborhood">Bairro</label>
-                    <input required type="search" list="zone" id="neighborhood" name="neighborhood">
-                    <datalist id="zone">
-                        <optgroup label="Zona Sul">
-                            <option>Leblon</option>
-                            <option>Copacabana</option>
-                            <option>Ipanema</option>
-                            <option>Gávea</option>
-                        </optgroup>    
-                    </datalist>
-                </div>    
-                <div class="area">
-                    <label for="quantity">Quantidade</label>
-                    <input type="number" id="quantity" name="quantity">
-                </div>    
-                </div>
-                <div class="area">
-                    <label for="password">Senha</label>
-                    <input type="password" id="password" name="password">
-                </div>
-                <div class="textarea">
-                    <label for="comments">Comentários/observações:</label>
-                    <div>
-                        <textarea id="comments" name="comments"></textarea>
-                    </div>    
-                </div>
                 <div class="button">
                     <button type="submit">Cadastrar</button>
                     <button type="reset">Limpar</button>
@@ -86,11 +77,6 @@
             </form>
         </main>
         <aside class="asideRight">
-            <button class="botao">
-                <a href="passeios.html">
-                    <span class="material-icons">arrow_forward</span>
-                </a>
-            </button>
         </aside>
         <footer>
             <div class="footerLeft">

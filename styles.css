@@ -65,7 +65,7 @@ body main{
     color: black;
     text-align: justify;
     height: fit-content;
-    margin-top: 70px;
+    margin-top: 60px;
 }
 
 .bem-vindo{
@@ -206,3 +206,19 @@ body footer{
     transform: scale(1.2);
 }
 
+main form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-width: fit-content;
+    gap: 0.5rem;
+}
+
+.button button{
+    background-color: #008CBA;
+    border-radius: 10px;
+    border: none;
+    padding: 5px 10px 5px 10px;
+    
+}
