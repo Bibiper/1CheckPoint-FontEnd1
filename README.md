@@ -2,5 +2,4 @@
 # Carlos Alberto Silva dos Santos Filho
 # Janaina dos Santos
 # Bianca Santos de Moraes
-# Turma: 03
-CTD
+# Turma: 03 CTD
