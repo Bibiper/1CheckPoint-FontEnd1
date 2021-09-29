@@ -104,7 +104,7 @@ body footer{
 .footerLeft{
     grid-area: footerLeft;
     color: white;
-    bottom: 0;   
+    bottom: 0;
     padding-left: 15px;
     padding-top: 25px
 }
@@ -243,7 +243,6 @@ fieldset.grupo .area {
 .area input[type="tel"]:hover,
 .area input[type="date"]:hover,
 .area input[type="radio"]:hover,
-.area input[type="radio"]:hover,
 .area select:hover {
     transform: scale(1.1);
 }
@@ -275,4 +274,85 @@ button:hover {
 
 button, select {
     cursor: pointer;
+}
+
+@media screen and (min-width: 450px){
+    body {
+        grid-template-columns: auto;
+        grid-template-areas: 'header'
+                             'asideLeft'
+                             'main'
+                             'asideRight'
+                             'footer';
+        height: 100vh;
+    }
+    body aside {
+        height: 80px;
+        margin-top: 0;
+    }
+    body header a {
+        width: 150px;
+        text-align: center;
+    }
+    .botao {
+        border-radius: 9%;
+        width: 300px;
+    }
+    .boxes-conteudo {
+        flex-direction: column;
+        gap: 50px;
+    }
+    form {
+        font-size: x-large;
+    }
+    form button {
+        font: x-large;
+    }
+    fieldset {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .area input[type="date"],
+    .area select {
+        width: 50%;
+        padding: 12px 20px;
+        margin: 8px 0;
+    }
+
+    .area input[type="text"],
+    .area input[type="email"],
+    .area input[type="tel"],
+    .area select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+    }
+    .area input[type="text"]:hover,
+    .area input[type="email"]:hover,
+    .area input[type="tel"]:hover,
+    .area input[type="date"]:hover,
+    .area input[type="radio"]:hover,
+    .area select:hover {
+        transform: scale(1.05);
+    }
+    body footer {
+        position: absolute;
+        width: 100%;
+    }
+    .description {
+        grid-template-columns: auto auto;
+    }
+    .sobre-conteudo {
+        display: none;
+        margin-left: 20px;
+        transition: 0.5s;
+    }
+    .description img:hover + .sobre-conteudo {
+        display: block;
+    }
+    .footerRight {
+        flex-direction: row-reverse;
+    }
+
 }
