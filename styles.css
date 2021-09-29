@@ -276,7 +276,7 @@ button, select {
     cursor: pointer;
 }
 
-@media (min-width: 450px){
+@media (max-width: 450px){
     body {
         grid-template-columns: auto;
         grid-template-areas: 'header'
@@ -286,7 +286,7 @@ button, select {
                              'footer';
         height: 100vh;
     }
-    body aside {
+   /*  body aside {
         height: 80px;
         margin-top: 0;
     }
@@ -297,26 +297,26 @@ button, select {
     .botao {
         border-radius: 9%;
         width: 300px;
-    }
+    } */
     .boxes-conteudo {
         flex-direction: column;
-        gap: 50px;
+        gap: 20px;
     }
-    form {
+    /* form {
         font-size: x-large;
     }
     form button {
         font: x-large;
-    }
+    } */
     fieldset {
         display: flex;
         flex-direction: column;
     }
 
-    .area input[type="date"],
+    /* .area input[type="date"],
     .area select {
         width: 50%;
-        padding: 12px 20px;
+        padding: 5px 20px;
         margin: 8px 0;
     }
 
@@ -327,7 +327,7 @@ button, select {
         width: 100%;
         padding: 12px 20px;
         margin: 8px 0;
-    }
+    } */
     .area input[type="text"]:hover,
     .area input[type="email"]:hover,
     .area input[type="tel"]:hover,
@@ -337,7 +337,7 @@ button, select {
         transform: scale(1.05);
     }
     body footer {
-        position: absolute;
+        position: sticky;
         width: 100%;
     }
     .description {
