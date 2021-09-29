@@ -277,7 +277,11 @@ button, select {
 }
 
 @media (max-width: 450px){
+
     body {
+        background-image: url(./img/destino-rio-de-janeiro-brazil-para-conocer-el-cerro-del-corcovado.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
         grid-template-columns: auto;
         grid-template-areas: 'header'
                              'asideLeft'
@@ -286,21 +290,21 @@ button, select {
                              'footer';
         height: 100vh;
     }
-   /*  body aside {
-        height: 80px;
-        margin-top: 0;
-    }
     body header a {
         width: 150px;
         text-align: center;
     }
+    body aside {
+        height: 20px;
+        margin-top: 0;
+    }
     .botao {
-        border-radius: 9%;
-        width: 300px;
-    } */
+        border-radius: 8px;
+        width: calc(100vw - 80%);
+    }
     .boxes-conteudo {
         flex-direction: column;
-        gap: 20px;
+        gap: 10px;
     }
     /* form {
         font-size: x-large;
@@ -345,8 +349,8 @@ button, select {
     }
     .sobre-conteudo {
         display: none;
-        margin-left: 20px;
-        transition: 0.5s;
+/*         margin-left: 20px;
+ */        transition: 0.5s;
     }
     .description img:hover + .sobre-conteudo {
         display: block;
