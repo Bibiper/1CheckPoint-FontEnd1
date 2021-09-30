@@ -181,6 +181,8 @@ body footer{
     flex-direction: column;
     width: 180px;
     height: 200px;
+    transition: 1s;
+
 }
 
 .box-conteudo img {
@@ -196,10 +198,9 @@ body footer{
     text-decoration: none;
     padding: 5px;
     font-size: 12px;
-    transition: 1s;
 }
 
-.box-conteudo a:hover {
+.box-conteudo:hover {
     transform: scale(1.2);
 }
 
@@ -274,89 +275,4 @@ button:hover {
 
 button, select {
     cursor: pointer;
-}
-
-@media (max-width: 450px){
-
-    body {
-        background-image: url(./img/destino-rio-de-janeiro-brazil-para-conocer-el-cerro-del-corcovado.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        grid-template-columns: auto;
-        grid-template-areas: 'header'
-                             'asideLeft'
-                             'main'
-                             'asideRight'
-                             'footer';
-        height: 100vh;
-    }
-    body header a {
-        width: 150px;
-        text-align: center;
-    }
-    body aside {
-        height: 20px;
-        margin-top: 0;
-    }
-    .botao {
-        border-radius: 8px;
-        width: calc(100vw - 80%);
-    }
-    .boxes-conteudo {
-        flex-direction: column;
-        gap: 10px;
-    }
-    /* form {
-        font-size: x-large;
-    }
-    form button {
-        font: x-large;
-    } */
-    fieldset {
-        display: flex;
-        flex-direction: column;
-    }
-
-    /* .area input[type="date"],
-    .area select {
-        width: 50%;
-        padding: 5px 20px;
-        margin: 8px 0;
-    }
-
-    .area input[type="text"],
-    .area input[type="email"],
-    .area input[type="tel"],
-    .area select {
-        width: 100%;
-        padding: 12px 20px;
-        margin: 8px 0;
-    } */
-    .area input[type="text"]:hover,
-    .area input[type="email"]:hover,
-    .area input[type="tel"]:hover,
-    .area input[type="date"]:hover,
-    .area input[type="radio"]:hover,
-    .area select:hover {
-        transform: scale(1.05);
-    }
-    body footer {
-        position: sticky;
-        width: 100%;
-    }
-    .description {
-        grid-template-columns: auto auto;
-    }
-    .sobre-conteudo {
-        display: none;
-/*         margin-left: 20px;
- */        transition: 0.5s;
-    }
-    .description img:hover + .sobre-conteudo {
-        display: block;
-    }
-    .footerRight {
-        flex-direction: row-reverse;
-    }
-
 }
